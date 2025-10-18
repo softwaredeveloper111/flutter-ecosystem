@@ -37,29 +37,51 @@ main {
   display: flex;
   flex-direction: column;
 }
-main #view-1 {
-  width: 100%;
-}
-main #view-1 > nav {
+main > nav {
   width: 100%;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-main #view-1 > nav > img {
+main > nav > img {
   width: 8.5rem;
   max-width: 125px;
 }
-main #view-1 > nav > i {
+main > nav > i {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.658);
+}
+main > nav #rnav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1;
+}
+main > nav #rnav > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.781);
+  font-weight: 500;
+}
+main > nav #rnav > button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-weight: 500;
+}
+main #view-1 {
+  width: 100%;
 }
 main #view-1 > #hero-section {
   width: 100%;
   background: linear-gradient(to top, #fbdfea, #f3fcff);
-  padding: 4.5rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 8rem;
@@ -168,7 +190,12 @@ main #view-2 #view-2-section #view-2-section-bottom > div > p {
   color: rgba(0, 0, 0, 0.644);
   width: 90%;
 }
-main #view-2 #view-2-section #view-2-section-bottom > div > button {
+main #view-2 #view-2-section #view-2-section-bottom > div #dhappa2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view-2 #view-2-section #view-2-section-bottom > div #dhappa2 > button {
   width: -moz-fit-content;
   width: fit-content;
   color: #0468d7;
@@ -177,7 +204,7 @@ main #view-2 #view-2-section #view-2-section-bottom > div > button {
   border-radius: 40px;
   padding: 10px 60px;
 }
-main #view-2 #view-2-section #view-2-section-bottom > div > span {
+main #view-2 #view-2-section #view-2-section-bottom > div #dhappa2 > span {
   font-weight: 700;
 }
 main #view-3 {
@@ -345,7 +372,12 @@ main #view-6 #view-6-section .card .text > p {
   font-size: 1.2rem;
   width: 90%;
 }
-main #view-6 #view-6-section .card .text > button {
+main #view-6 #view-6-section .card .text #dhappa1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view-6 #view-6-section .card .text #dhappa1 > button {
   width: -moz-fit-content;
   width: fit-content;
   background-color: white;
@@ -440,8 +472,14 @@ main #view-7 #view-7-section-bottom #footer > div {
   html {
     font-size: clamp(14px, 0.8vw, 18px);
   }
-  main #view-1 > nav {
+  main > nav {
     padding: 1.4rem 3rem;
+  }
+  main > nav > i {
+    display: none;
+  }
+  main > nav #rnav {
+    display: flex;
   }
   main #view-1 > #hero-section {
     background: linear-gradient(to top right, #fbdfea, #f3fcff);
@@ -483,6 +521,10 @@ main #view-7 #view-7-section-bottom #footer > div {
   }
   main #view-2 #view-2-section #view-2-section-bottom > div {
     width: 50%;
+  }
+  main #view-2 #view-2-section #view-2-section-bottom > div #dhappa2 {
+    flex-direction: row;
+    align-items: center;
   }
   main #view-3 {
     width: 100%;
@@ -557,8 +599,15 @@ main #view-7 #view-7-section-bottom #footer > div {
   main #view-6 #view-6-section .card {
     padding: 12rem 1rem;
   }
+  main #view-6 #view-6-section .card > img {
+    width: 50%;
+  }
+  main #view-6 #view-6-section .card .text #dhappa1 {
+    flex-direction: row;
+    align-items: center;
+  }
   main #view-7 {
-    padding: 4rem 13rem;
+    padding: 4rem 6rem;
     width: 100%;
   }
   main #view-7 #view-7-section-top {
@@ -567,7 +616,7 @@ main #view-7 #view-7-section-bottom #footer > div {
   }
   main #view-7 #view-7-section-top > div {
     flex-direction: row;
-    gap: 6rem;
+    gap: 15rem;
   }
   main #view-7 #view-7-section-top > div > .div1 > h5,
   main #view-7 #view-7-section-top > div > .div2 > h5,
