@@ -632,4 +632,9 @@ main #view-7 #view-7-section-bottom #footer > div {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  main {
+    width: 1200px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -34,6 +34,10 @@ body {
   background-color: white;
 }
 
+
+
+
+
 main {
   width: 100%;
   display: flex;
@@ -516,12 +520,6 @@ main {
 
 
 
-
-
-
-
-
-
 @media (min-width: 1024px) {
   html {
     font-size: clamp(14px, 0.8vw, 18px);
@@ -714,4 +712,12 @@ main {
       }
     }
   }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+   main{
+     width: 1200px;
+   }
 }
